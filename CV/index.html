@@ -3,9 +3,9 @@ layout: default
 title: Haiming Ran's CV
 ---
 	<h1>{{ page.title }}</h1>
-	<ul class="posts">
+	<ul class="CV">
 
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% for CV in site.CV %}
+	    <li><span>{{ CV.date | date_to_string }}</span> » <a href="{{ CV.url }}" title="{{ CV.title }}">{{ CV.title }}</a></li>
 	  {% endfor %}
 	</ul>
